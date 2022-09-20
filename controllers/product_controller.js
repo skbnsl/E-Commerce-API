@@ -1,5 +1,7 @@
 const Product = require('../models/product');
 
+
+//add the data in the database
 module.exports.create = async function(req, res){
            try {
               const obj = {};
@@ -14,6 +16,8 @@ module.exports.create = async function(req, res){
            }
 }
 
+
+//delete the data from database
 module.exports.delete = async function(req, res){
           try {
                   const obj = []; 
@@ -24,6 +28,8 @@ module.exports.delete = async function(req, res){
           }
 }
 
+
+//update the data in database
 module.exports.update = async function(req, res){
           try {
                     const a = req.query.number;
@@ -38,6 +44,8 @@ module.exports.update = async function(req, res){
           }
 }
 
+
+//fetching the data
 module.exports.getData = async function(req, res){
  try {
           const obj = {};
