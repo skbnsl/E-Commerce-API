@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.get('/', ProductController.getData);
 
-router.post('/', ProductController.create);
+router.post('/create', ProductController.create);
 
 router.put('/:id/update_quantity', ProductController.update);
 
