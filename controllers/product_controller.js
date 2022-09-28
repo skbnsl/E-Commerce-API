@@ -1,3 +1,4 @@
+//import schema
 const Product = require('../models/product');
 
 
@@ -19,8 +20,7 @@ module.exports.create = async function(req, res){
 
 //delete the data from database
 module.exports.delete = async function(req, res){
-          try {
-                  const obj = []; 
+          try { 
                   await Product.findByIdAndDelete({_id: req.params.id});
                   res.status(200).json({message:"deleted"}); 
           } catch (error) {

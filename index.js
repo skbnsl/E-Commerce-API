@@ -1,3 +1,4 @@
+//require express module
 const express = require('express');
 const dotenv = require('dotenv');
 const db = require('./config/mongoose');
