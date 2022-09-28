@@ -1,9 +1,8 @@
 //import mongoose
 const mongoose = require('mongoose');
-const mongoURI = "mongodb+srv://skbansal:skbnsl@cluster0.i2grcwf.mongodb.net/?retryWrites=true&w=majority";
 
 //connected to database
-mongoose.connect(mongoURI);
+mongoose.connect('mongodb+srv://skbansal:skbnsl@cluster0.i2grcwf.mongodb.net/?retryWrites=true&w=majority');
                 
 const db = mongoose.connection;
 
