@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 
 //connected to database
-mongoose.connect('mongodb+srv://skbansal:skbnsl@cluster0.i2grcwf.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://skbnsl2:bansal12@ecomapi.gnwo7av.mongodb.net/?retryWrites=true&w=majority');
                 
 const db = mongoose.connection;
 
